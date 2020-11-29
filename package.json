@@ -1,5 +1,5 @@
 {
-  "name": "my-VBlog",
+  "name": "gridsome-blog",
   "private": true,
   "scripts": {
     "build": "gridsome build",

@@ -24,10 +24,10 @@
           <b>♪</b>
         </font>
       </div>
-      <h1 class="project-name">{{ vblog.blogTitle }}</h1>
-      <h2 class="project-tagline">{{ vblog.blogDescribe }}</h2>
+      <h1 class="project-name">{{ "HIPPO" || vblog.blogTitle }}</h1>
+      <h2 class="project-tagline">{{ "欢迎来到Hippo的个人博客。" || vblog.blogDescribe }}</h2>
       <a
-        :href="'https://github.com/' + vblog.githubUsername"
+        :href="'https://github.com/HIPPOWUYUFAN'"
         class="btn"
         target="_blank"
         >GitHub主页</a
@@ -67,18 +67,18 @@
                   :index="'#webSites-' + index"
                   v-for="(item, index) in vblog.webSites.split(',')"
                   :key="'#webSites' + index"
-                  >{{ item }}</el-menu-item
+                  >{{index?"https://im.hippowu.com":"https://github.com/HIPPOWUYUFAN" }}</el-menu-item
                 >
               </el-submenu>
             </el-menu>
           </el-col>
           <el-col :span="4" :offset="8" style="text-align: right;">
             <div style="font-size: 20px;color:#606266;margin-top: 5px">
-              <b>{{ vblog.githubUsername }}</b>
+              <b>{{ 'HIPPOWUYUFAN' || vblog.githubUsername }}</b>
             </div>
             <div style="color:#606266;">
               <i class="el-icon-location"></i>&nbsp;{{
-                vblog.location ? vblog.location : "未填写地址"
+                vblog.location ? "广东省，深圳市" : "未填写地址"
               }}
               <br />
             </div>
@@ -86,21 +86,21 @@
           <el-col :span="2" style="text-align: center;">
             <img
               v-popover:bigAvatar
-              :src="'http://strapi.jiailing.com'+vblog.avatarUrl.url"
+              :src="'https://im.hippowu.com/static/img/hippo.3db60216.svg'"
               style="margin-top: 4px;margin-right: 10px;width:52px; height:52px; border-radius:5px; border: 1px solid #EBEEF5"
             />
             <el-popover
               ref="bigAvatar"
               placement="top-start"
-              :title="vblog.githubUsername"
+              :title="'HIPPOWUYUFAN'||vblog.githubUsername"
               width="200"
               trigger="hover"
             >
-              <i class="el-icon-star-on"></i>&emsp;{{ vblog.name }}
+              <i class="el-icon-star-on"></i>&emsp;{{ "Hippo"||vblog.name }}
               <br />
-              <i class="el-icon-location"></i>&emsp;{{ vblog.location }}
+              <i class="el-icon-location"></i>&emsp;{{ "广东省，深圳市" || vblog.location }}
               <br />
-              <img :src="'http://strapi.jiailing.com'+vblog.avatarUrl.url" style="width: 200px;height: 200px;" />
+              <img :src="'https://im.hippowu.com/static/img/hippo.3db60216.svg'" style="width: 200px;height: 200px;" />
             </el-popover>
           </el-col>
         </el-row>

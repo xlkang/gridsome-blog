@@ -4,8 +4,8 @@
 			<el-col :span="10">
 				<div>
 					© 2020 Hippo&emsp;&emsp;
-					<a href="https://github.com/2604150210" target="_blank">Profile</a>&emsp;&emsp;
-					<a href="https://github.com/2604150210/vblog" target="_blank">VBlog</a>
+					<a href="https://github.com/HIPPOWUYUFAN" target="_blank">Profile</a>&emsp;&emsp;
+					<a href="https://github.com/HIPPOWUYUFAN/gridsome-blog" target="_blank">VBlog</a>
 				</div>
 			</el-col>
 			<el-col :span="4">
