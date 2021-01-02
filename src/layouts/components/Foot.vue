@@ -3,9 +3,9 @@
 		<el-row>
 			<el-col :span="10">
 				<div>
-					© 2020 Hippo&emsp;&emsp;
-					<a href="https://github.com/HIPPOWUYUFAN" target="_blank">Profile</a>&emsp;&emsp;
-					<a href="https://github.com/HIPPOWUYUFAN/gridsome-blog" target="_blank">VBlog</a>
+					© 2020 PETRVS&emsp;&emsp;
+					<a href="https://github.com/xlkang" target="_blank">Profile</a>&emsp;&emsp;
+					<a href="https://github.com/xlkang/gridsome-blog" target="_blank">VBlog</a>
 				</div>
 			</el-col>
 			<el-col :span="4">

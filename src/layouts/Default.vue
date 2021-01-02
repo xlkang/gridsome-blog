@@ -24,10 +24,10 @@
           <b>♪</b>
         </font>
       </div>
-      <h1 class="project-name">{{ "HIPPO" || vblog.blogTitle }}</h1>
-      <h2 class="project-tagline">{{ "欢迎来到Hippo的个人博客。" || vblog.blogDescribe }}</h2>
+      <h1 class="project-name">{{ "PETRVS" || vblog.blogTitle }}</h1>
+      <h2 class="project-tagline">{{ "欢迎来到Petrvs的个人博客。" || vblog.blogDescribe }}</h2>
       <a
-        :href="'https://github.com/HIPPOWUYUFAN'"
+        :href="'https://github.com/xlkang'"
         class="btn"
         target="_blank"
         >GitHub主页</a
@@ -67,18 +67,18 @@
                   :index="'#webSites-' + index"
                   v-for="(item, index) in vblog.webSites.split(',')"
                   :key="'#webSites' + index"
-                  >{{index?"https://im.hippowu.com":"https://github.com/HIPPOWUYUFAN" }}</el-menu-item
+                  >{{index?"https://im.hippowu.com":"https://github.com/xlkang" }}</el-menu-item
                 >
               </el-submenu>
             </el-menu>
           </el-col>
           <el-col :span="4" :offset="8" style="text-align: right;">
             <div style="font-size: 20px;color:#606266;margin-top: 5px">
-              <b>{{ 'HIPPOWUYUFAN' || vblog.githubUsername }}</b>
+              <b>{{ 'PETRVS' || vblog.githubUsername }}</b>
             </div>
             <div style="color:#606266;">
               <i class="el-icon-location"></i>&nbsp;{{
-                vblog.location ? "广东省，深圳市" : "未填写地址"
+                vblog.location ? "四川省，成都市" : "未填写地址"
               }}
               <br />
             </div>
@@ -92,13 +92,13 @@
             <el-popover
               ref="bigAvatar"
               placement="top-start"
-              :title="'HIPPOWUYUFAN'||vblog.githubUsername"
+              :title="'PETRVS'||vblog.githubUsername"
               width="200"
               trigger="hover"
             >
-              <i class="el-icon-star-on"></i>&emsp;{{ "Hippo"||vblog.name }}
+              <i class="el-icon-star-on"></i>&emsp;{{ "PETRVS"||vblog.name }}
               <br />
-              <i class="el-icon-location"></i>&emsp;{{ "广东省，深圳市" || vblog.location }}
+              <i class="el-icon-location"></i>&emsp;{{ "四川省，成都市" || vblog.location }}
               <br />
               <img :src="'https://im.hippowu.com/static/img/hippo.3db60216.svg'" style="width: 200px;height: 200px;" />
             </el-popover>
